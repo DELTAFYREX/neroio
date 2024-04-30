@@ -78,6 +78,8 @@ function collide(collision) {
                 case (wall.shape == 0):
                     mooncollide(wall, entity);
                     break;
+                case (wall.shapeData == "M 1 0 A 1 1 0 0 0 -1 0 A 1 1 0 0 0 1 0"):
+                    break;
                 default:
                     let a = entity.type === "bullet" ? 1 + 10 / (entity.velocity.length + 10) : 1;
                     advancedcollide(wall, entity, false, false, a);
