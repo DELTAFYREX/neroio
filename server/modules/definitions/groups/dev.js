@@ -1136,6 +1136,14 @@ Class.flailBallSpike = {
 Class.flailBall = {
     PARENT: "genericTank",
     COLOR: "grey",
+
+    BODY: {        
+      DENSITY: 2 * base.DENSITY,
+      HEALTH: 10000,
+      SHIELD: 10000,
+      DAMAGE: 4.5,
+      REGEN: 10000
+    },
     HITS_OWN_TYPE: 'hard',
     INDEPENDENT: true,
     TURRETS: [{
@@ -1152,7 +1160,8 @@ Class.flailBolt1 = {
     }],
     TURRETS: [{
         POSITION: [48, 56, 0, 0, 360, 1],
-        TYPE: "flailBall"
+        TYPE: "flailBall",
+	VULNERABLE: true
     }],
 };
 Class.flailBolt2 = {
