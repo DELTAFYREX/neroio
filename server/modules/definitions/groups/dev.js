@@ -1136,7 +1136,8 @@ Class.flailBallSpike = {
 Class.flailBall = {
     PARENT: "genericTank",
     COLOR: "grey",
-
+    TYPE: "wall",
+    SHAPE: "M 1 0 A 1 1 0 0 0 -1 0 A 1 1 0 0 0 1 0",
     BODY: {        
       DENSITY: 2 * base.DENSITY,
       HEALTH: 10000,
